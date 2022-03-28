@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find stella_camera)/launch/stella_camera.launch">
+  </include>
+  <include file="$(find stella_md)/launch/stella_mwdriver.launch">
+  </include>
+  <node name="stella_linetrace_node" pkg="stella_linetrace"  type="stella_linetrace_node" output="screen">
+  </node>
+</launch>
